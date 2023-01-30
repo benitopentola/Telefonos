@@ -8,19 +8,18 @@ class AgendaTelefonica:
 
         self.contacts = {}
 
-        # Create Entry widgets for name, phone and address
+
         self.name_entry = tk.Entry(self.master)
         self.phone_entry = tk.Entry(self.master)
         self.address_entry = tk.Entry(self.master)
 
-        # Create buttons for adding and searching contacts
+
         self.add_button = tk.Button(self.master, text="Añadir", command=self.add_contact)
         self.search_button = tk.Button(self.master, text="Buscar", command=self.search_contact)
 
-        # Create a text widget to display the results
+
         self.results_text = tk.Text(self.master, height=10, width=30)
 
-        # Place the widgets on the window
         self.name_entry.grid(row=0, column=0)
         self.phone_entry.grid(row=1, column=0)
         self.address_entry.grid(row=2, column=0)
@@ -36,7 +35,7 @@ class AgendaTelefonica:
         self.contacts[name] = (phone, address)
 
         self.results_text.insert(tk.END, f"Contacto añadido: {name}\n")
-
+#dddddd
     def search_contact(self):
         name = self.name_entry.get()
 
