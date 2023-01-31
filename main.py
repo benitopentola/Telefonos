@@ -35,7 +35,7 @@ class AgendaTelefonica:
         self.contacts[name] = (phone, address)
 
         self.results_text.insert(tk.END, f"Contacto añadido: {name}\n")
-#dddddd
+
     def search_contact(self):
         name = self.name_entry.get()
 
